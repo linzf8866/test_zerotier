@@ -23,8 +23,8 @@ jobs:
           
       - name: 解压 OpenWrt 固件
         run: |
-          gzip -d openwrt-actions.img.gz
-          gzip -d openwrt.bin.gz
+          gzip -d openwrt-armvirt-64-generic-ext4-rootfs_actions.img.gz
+          gzip -d openwrt-armvirt-64-generic-kernel.bin.gz
 
       - name: 运行 OpenWrt 虚拟机
         run: |
