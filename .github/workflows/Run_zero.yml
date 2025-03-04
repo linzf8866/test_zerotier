@@ -32,6 +32,6 @@ jobs:
             -kernel openwrt-armvirt-64-generic-kernel.bin \
             -append "root=fe00" \
             -hda openwrt-armvirt-64-generic-ext4-rootfs_actions.img \
-            -no-reboot -nographic \
+            -nographic \
             -cpu cortex-a76 -smp 4 \
             -net nic -net user,id=wan,hostfwd=tcp::7080-:80,hostfwd=tcp::7022-:22
